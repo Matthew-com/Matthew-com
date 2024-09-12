@@ -1,57 +1,49 @@
-*Task 1: Declare and Initialize an Array*
+[9/12, 10:31 PM] Champion Francis: *Task1:DeclareandInitializeanArray*
 ```
-#include <iostream>
-
-int main() {
-    int myArray[5] = {1, 2, 3, 4, 5};
-    return 0;
+#include<iostream>
+intmain(){
+intmyArray[5]={1,2,3,4,5};
+return0;
 }
 ```
-
-*Task 2: Declare and Initialize a two-dimensional Array*
+*Task2:DeclareandInitializeatwo-dimensionalArray*
 ```
-#include <iostream>
-
-int main() {
-    int my2DArray[3][4] = {
-        {1, 2, 3, 4},
-        {5, 6, 7, 8},
-        {9, 10, 11, 12}
-    };
-    return 0;
+#include<iostream>
+intmain(){
+intmy2DArray[3][4]={
+{1,2,3,4},
+{5,6,7,8},
+{9,10,11,12}
+};
+return0;
 }
 ```
-
-*Task 3: Transverse an Array*
-```
-#include <iostream>
-
-int main() {
-    int myArray[5] = {1, 2, 3, 4, 5};
-    for (int i = 0; i < 5; i++) {
-        std::cout << myArray[i] << std::endl;
-    }
-    return 0;
+*Task3:TransverseanArray
+[9/12, 10:33 PM] Champion Francis: ```
+#include<iostream>
+intmain(){
+intmyArray[5]={1,2,3,4,5};
+for(inti=0;i<5;i++){
+std::cout<<myArray[i]<<std::endl;
+}
+return0;
 }
 ```
-
-*Task 4: Concatenate a String of Array*
+*Task4:ConcatenateaStringofArray*
 ```
-#include <iostream>
-#include <string>
-
-std::string concatenateArray(int arr[], int size) {
-    std::string result = "";
-    for (int i = 0; i < size; i++) {
-        result += std::to_string(arr[i]) + " ";
-    }
-    return result;
+#include<iostream>
+#include<string>
+std::stringconcatenateArray(intarr[],intsize){
+std::stringresult="";
+for(inti=0;i<size;i++){
+result+=std::to_string(arr[i])+"";
 }
-
-int main() {
-    int myArray[5] = {1, 2, 3, 4, 5};
-    std::string concatenatedString = concatenateArray(myArray, 5);
-    std::cout << concatenatedString << std::endl;
-    return 0;
+returnresult;
+}
+[9/12, 10:33 PM] Champion Francis: intmain(){
+intmyArray[5]={1,2,3,4,5};
+std::stringconcatenatedString=concatenateArray(myArray,5);
+std::cout<<concatenatedString<<std::endl;
+return0;
 }
 ```
